@@ -64,29 +64,44 @@
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
+    <section id="resources" class="resources">
         <div class="container">
-            <h2>学员反馈</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"通过Pilot的课程，我终于克服了演讲恐惧，现在能够自信地在公司会议上发言。"</p>
-                    <div class="testimonial-author">
-                        <img src="images/avatar1.jpg" alt="张明">
-                        <div>
-                            <h4>张明</h4>
-                            <p>产品经理</p>
+            <h2>学习资源</h2>
+            <div class="resources-grid">
+                <!-- 视频资源将通过 JavaScript 动态加载 -->
+            </div>
+            
+            <div class="upload-section">
+                <button id="uploadButton" class="upload-button">上传新视频</button>
+            </div>
+            
+            <div class="modal" id="uploadModal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>上传视频资源</h2>
+                    <form id="uploadForm">
+                        <div class="form-group">
+                            <label for="videoTitle">视频标题</label>
+                            <input type="text" id="videoTitle" name="videoTitle" required>
                         </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"课程设计非常专业，6周时间让我的演讲水平有了质的飞跃。"</p>
-                    <div class="testimonial-author">
-                        <img src="images/avatar2.jpg" alt="李婷">
-                        <div>
-                            <h4>李婷</h4>
-                            <p>创业者</p>
+                        <div class="form-group">
+                            <label for="videoDescription">视频描述</label>
+                            <textarea id="videoDescription" name="videoDescription" required></textarea>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="videoDuration">视频时长（分钟）</label>
+                            <input type="number" id="videoDuration" name="videoDuration" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="videoFile">选择视频文件</label>
+                            <input type="file" id="videoFile" name="videoFile" accept="video/*" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="thumbnailFile">选择封面图片</label>
+                            <input type="file" id="thumbnailFile" name="thumbnailFile" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="submit-button">上传视频</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -105,5 +120,29 @@
             <p>&copy; 2024 Pilot. All rights reserved.</p>
         </div>
     </footer>
+
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>报名参加 Pilot 课程</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="wechat">微信号</label>
+                    <input type="text" id="wechat" name="wechat" required>
+                </div>
+                <button type="submit" class="submit-button">提交报名</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html> 

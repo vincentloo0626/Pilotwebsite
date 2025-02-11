@@ -9,11 +9,15 @@
 - 流畅的动画效果
 - 清晰的课程介绍
 - 学员反馈展示
+- 视频资源管理系统
 
 ## 技术栈
 
-- HTML5
-- CSS3
-- 现代化的 CSS 特性（Flexbox, Grid, 动画）
+- 前端：HTML5, CSS3, JavaScript
+- 后端：Node.js, Express
+- 数据库：MongoDB
+- 文件上传：Multer
 
 ## 项目结构 
+
+http://localhost:3000 
