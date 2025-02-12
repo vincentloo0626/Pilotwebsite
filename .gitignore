@@ -1,7 +1,29 @@
+# 依赖
 node_modules/
-.DS_Store
+
+# 环境变量
 .env
-backend/uploads/*
-!backend/uploads/.gitkeep
+
+# 日志
+logs
+*.log
+npm-debug.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 编辑器配置
 .vscode/
-*.log 
+.idea/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+backend/uploads/*
+!backend/uploads/.gitkeep 

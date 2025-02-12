@@ -1,4 +1,5 @@
 require('dotenv').config();
+console.log('服务器正在启动...');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');

@@ -21,3 +21,10 @@
 ## 项目结构 
 
 http://localhost:3000 
+
+## 对话记录
+
+conversations/
+├── pilot-website-development.md
+├── images/
+└── code-snippets/ 
